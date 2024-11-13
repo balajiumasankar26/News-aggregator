@@ -24,8 +24,9 @@ const UpdateNews = () => {
     // Handles form submission
     const handleSubmit = async (e) => {
         e.preventDefault();
+        console.log(newsData)
         try {
-            const response = await axios.put('http://localhost:2000/api/news/update', newsData);
+            const response = await axios.post('http://localhost:3000/api/news/create', newsData);
             console.log('Response:', response.data);
             alert('News updated successfully!');
         } catch (error) {
