@@ -1,0 +1,50 @@
+.card-home{
+    padding: 1em;
+    transition:all 0.3s ease-in-out;
+}
+.card-home:hover{
+    position: relative;
+    top:-0.2em
+}
+.card-home:hover .news-card{
+    height: 100%;
+}
+.news-card {
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    overflow: hidden; /* Hide overflow for rounded corners */
+    width: 20em;
+    cursor: pointer;
+}
+
+.news-card-image {
+    border-bottom: 1px solid #eaeaea; /* Add a subtle border below the image */
+    width:min(100px,80%);
+    height: 10em;
+}
+
+.news-card-title {
+    font-size: 1.25rem;
+    font-weight: 600; /* Bold title for emphasis */
+    text-overflow: ellipsis; 
+    overflow: hidden;
+    margin-bottom: 0.5rem; /* Spacing below title */
+}
+
+.news-card-description {
+    font-size: 0.9rem; /* Smaller font for the description */
+    margin-bottom: 1rem; /* Spacing below description */
+}
+
+.news-card-button {
+    background-color: blueviolet;
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 0em;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.news-card-button:hover {
+    background-color: blueviolet; /* Darker blue on hover */
+}
